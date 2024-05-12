@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.logging.log4j:log4j-core:2.14.1'  // Vulnerable version
+}
+
+application {
+    // Define the main class (update this with your package and class name)
+    mainClass = 'org.example.App'
+}
+
+
